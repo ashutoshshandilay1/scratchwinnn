@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scratch and Win</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@2.0.8/dist/lottie-player.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@2.0.8/dist/lottie-player.js"></script>
+<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+<script src="https://kit.fontawesome.com/69d6fd586e.js" crossorigin="anonymous"></script>
+  <header class="header-banner">
+    <img src="/scratch-and-win-scratch-and-win-png.png" 
+         alt="Scratch and Win Banner" class="banner-image">
+  </header>
+  <h2 class="stylish-heading">💸 WIN REDEEM CODE BETWEEN ₹10 - 500 💸</h2>
+<marquee behavior="scroll" direction="left" scrollamount="5" class="stylish-marquee">
+  ⚠️ Important Notice: You will get daily only one scratch card. ⚠️
+</marquee>
+
+  <div class="container">
+    <div class="hidden-prize" id="hiddenPrize">
+      <img src="/png-clipart-google-play-gift-card-android-delivery-game-android-angle-text-thumbnail-removebg-preview.png" 
+           alt="Google Play Gift Card" class="prize-image">
+      <h1>₹10</h1>
+      <p>You win a Google Play voucher!</p>
+      <button id="claimButton">Claim</button>
+    </div>
+    <canvas id="scratchCanvas"></canvas>
+  </div>
+  <div id="verificationModal" class="modal stylish-modal">
+    <div class="modal-content stylish-content">
+      <lottie-player
+        src="https://lottie.host/646663ed-78f9-42a9-841b-61a3c8388836/l0FGVay2Ct.json"
+        background="transparent"
+        speed="1"
+        style="width: 120px; height: 120px;"
+        loop autoplay id="animation">
+      </lottie-player>
+      <p class="verifying-text">Verifying<span>.</span><span>.</span><span>.</span></p>
+      <div class="progress-container stylish-progress">
+        <div id="progressBar" class="progress-bar"></div>
+      </div>
+      <p id="timerText" class="stylish-timer-text">30 seconds remaining</p>
+    </div>
+  </div>
+  
+  
+
+  <div id="successModal" class="modal stylish-modal">
+    <div class="modal-content stylish-content">
+      <h2 class="success-title">🎉 Congratulations! 🎉</h2>
+      <p class="success-text">Here is your ₹10 Redeem Code:</p>
+      <p id="redeemCode" class="redeem-code">H2JM BZ88 EB79 U33T</p>
+      <button id="copyButton" class="stylish-button copy-button">Copy</button>
+      <button id="scratchAgainButton" class="stylish-button scratch-again-button">Scratch Again</button>
+      <p id="scratchTimer" class="hidden stylish-timer-text">You can scratch again after: <span id="countdownTimer"></span></p>
+    </div>
+  </div>
+  
+
+  <div class="notice stylish-notice">
+    <div class="notice-header">
+      <h3>⚠️ Notice ⚠️</h3>
+    </div>
+    <ul class="notice-list">
+      <li><i class="fas fa-info-circle"></i> This project is solely for educational purposes.</li>
+      <li><i class="fas fa-shield-alt"></i> No personal data is collected or stored during the use of this project.</li>
+      <li><i class="fas fa-hand-holding-usd"></i> We do not collect any payment or fees. This service is completely free.</li>
+      <li><i class="fas fa-graduation-cap"></i> By using this project, you agree that it is intended for learning and demonstration only.</li>
+    </ul>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
