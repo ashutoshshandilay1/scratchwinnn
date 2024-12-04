@@ -98,6 +98,23 @@
       <li><i class="fas fa-graduation-cap"></i> By using this project, you agree that it is intended for learning and demonstration only.</li>
     </ul>
   </div>
+  <script>
+    function generateRedeemCode() {
+      const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+      let redeemCode = '';
+      for (let i = 0; i < 12; i++) {
+        redeemCode += characters.charAt(Math.floor(Math.random() * characters.length));
+      }
+      return redeemCode.match(/.{1,4}/g).join(' '); // Group into sets of 4
+    }
+  
+    // Example: Dynamically insert the redeem code into the modal
+    document.addEventListener('DOMContentLoaded', () => {
+      const redeemCodeElement = document.getElementById('redeemCode');
+      const generatedCode = generateRedeemCode();
+      redeemCodeElement.textContent = generatedCode + ' ****';
+    });
+  </script>
   
 
   <script src="script.js"></script>
