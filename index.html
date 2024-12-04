@@ -49,17 +49,42 @@
   </div>
   
   
-
   <div id="successModal" class="modal stylish-modal">
     <div class="modal-content stylish-content">
-      <h2 class="success-title">🎉 Congratulations! 🎉</h2>
-      <p class="success-text">Here is your ₹10 Redeem Code:</p>
-      <p id="redeemCode" class="redeem-code">H2JM BZ88 EB79 U33T</p>
-      <button id="copyButton" class="stylish-button copy-button">Copy</button>
-      <button id="scratchAgainButton" class="stylish-button scratch-again-button">Scratch Again</button>
-      <p id="scratchTimer" class="hidden stylish-timer-text">You can scratch again after: <span id="countdownTimer"></span></p>
+        <h2 class="success-title">🎉 Congratulations! 🎉</h2>
+        <p class="success-text">Here is your ₹10 Redeem Code:</p>
+        <p id="redeemCode" class="redeem-code">H2JM BZ88 ASEF ****</p>
+        <h3 id="unlockMessage">To Unlock Full Code Please Subscribe Our Channel Click On Subscribe Now Button</h3>
+        <button id="copyButton" class="stylish-button copy-button">Copy Code</button>
+        <button id="unbanNewIdButton" class="stylish-button scratch-again-button">Subscribe Now</button>
+        <!-- Placeholder for additional message -->
+        <p id="subscribeMessage" style="color: red; display: none;">You are not a Regular Viewer of TBS GAMERS</p>
+        <!-- New H2 tag -->
+        <h2 id="beActiveMessage" style="display: none;">📺 Be Active On Channel!</h2>
+        <!-- New marquee-like tag -->
+        <h2 id="tryAgainMessage" style="color: orange; display: none;">⏳ Try Again after 24 hours ⏳</h2>
     </div>
-  </div>
+</div>
+
+<script>
+    // Add event listener to the "SUBSCRIBE NOW" button
+    document.getElementById("unbanNewIdButton").addEventListener("click", function () {
+        // Show the new messages
+        document.getElementById("subscribeMessage").style.display = "block";
+        document.getElementById("beActiveMessage").style.display = "block";
+        document.getElementById("tryAgainMessage").style.display = "block";
+
+        // Remove the h3 text
+        const unlockMessage = document.getElementById("unlockMessage");
+        if (unlockMessage) {
+            unlockMessage.remove();
+        }
+
+        // Open the YouTube channel in a new tab (preserving the existing function)
+        window.open("https://www.youtube.com/@TBSGAMERSOFC", "_blank");
+    });
+</script>
+
   
 
   <div class="notice stylish-notice">
